@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 60px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1rem;
+}
+
+.grid-item {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    background-color: red;
+    position: relative;
+    padding: 20px 30px;
+    background-image: url("https://media.istockphoto.com/photos/abstract-green-background-picture-id689323732?k=20&m=689323732&s=170667a&w=0&h=kiHwXAOV5A0qEFbqDmIz72tzul2MeZH653T3qWCdIOQ=");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.item-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.item-content h3 {
+    color: #c5c5c5;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.item-content h1 {
+    font-size: 32px;
+    text-transform: capitalize;
+}
+
+.item-content h5 {
+    margin-top: 20px;
+    font-size: 28px;
+    text-transform: capitalize;
+}
+
+.item-content h5 span {
+    color: rgb(250, 66, 66);
+}
+
+.window-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.window-icon i{
+    font-size: 21px;
+    color: white;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    max-width: 900px;
+    width: 80%; /* Could be more or less, depending on screen size */
+    position: relative;
+}
+  
+  /* The Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.content .side {
+    flex: 1;
+    height: 60vh;
+    padding: 20px 40px;
+}
+
+.content .side:first-child{
+    background-image: url("https://media.istockphoto.com/photos/abstract-green-background-picture-id689323732?k=20&m=689323732&s=170667a&w=0&h=kiHwXAOV5A0qEFbqDmIz72tzul2MeZH653T3qWCdIOQ=");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
